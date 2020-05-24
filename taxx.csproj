@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AC19B198-21FD-47CF-AFCB-1325D0776763}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>taxx</RootNamespace>
+    <AssemblyName>taxx</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="G5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>G5.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G6.Designer.cs">
+      <DependentUpon>G6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="home.Designer.cs">
+      <DependentUpon>home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G1.Designer.cs">
+      <DependentUpon>G1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G2.Designer.cs">
+      <DependentUpon>G2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G3.Designer.cs">
+      <DependentUpon>G3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G4.Designer.cs">
+      <DependentUpon>G4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="G5.resx">
+      <DependentUpon>G5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="home.resx">
+      <DependentUpon>home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G1.resx">
+      <DependentUpon>G1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G2.resx">
+      <DependentUpon>G2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G3.resx">
+      <DependentUpon>G3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G4.resx">
+      <DependentUpon>G4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="G6.resx">
+      <DependentUpon>G6.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Color Bars General Twitch Banner %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\โปรแกรมคำนวนลดหย่อนภาษี.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\สไลด์1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\สไลด์2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\สไลด์3.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\สไลด์4.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\สไลด์5.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\สไลด์6.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\สไลด์11.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ipp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\opp.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
