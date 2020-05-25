@@ -33,30 +33,21 @@ namespace taxx
 
         private void label2_Click(object sender, EventArgs e)
         {
-            G2 b = new G2();
-            b.Show();
-            this.Hide();
+            
         }
 
         private void label4_Click(object sender, EventArgs e)
         {
-            G3 c = new G3();
-            c.Show();
-            this.Hide();
         }
 
         private void label5_Click(object sender, EventArgs e)
         {
-            G4 d = new G4();
-            d.Show();
-            this.Hide();
+           
         }
 
         private void label6_Click(object sender, EventArgs e)
         {
-            G5 f = new G5();
-            f.Show();
-            this.Hide();
+           
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -53,7 +53,7 @@ namespace taxx
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int realty2558 = int.Parse(numericUpDown2.Text);
+            int realty2558 = int.Parse(numericUpDown2.Text); 
             int interesthouse = int.Parse(numericUpDown1.Text);
             int outcome2558;
             int outcome4;
@@ -63,7 +63,7 @@ namespace taxx
            {
                 outcome2558 = (realty2558 * 20) / 100;
                 textBox1.Text = outcome2558.ToString();
-                outcome4 = (outcome2558 * 4) / 20;
+                outcome4 = outcome2558 / 5;
                 textBox2.Text = outcome4.ToString();
                 outcomefinal2558 = (interesthouse + outcome4);
                 textBox7.Text = outcomefinal2558.ToString();
@@ -119,17 +119,17 @@ namespace taxx
             int sumall = int.Parse(textsum.Text);
             int outcomesum;
             int a = 0;
-            if (realty2562 <= 5000000)
+            if (realty2562 > 5000000)
             {
                 a = 200000;
             }
-            else if (realty2562 > 5000000)
+            else if (realty2562 <= 5000000)
             {
-                a = 0;
+                a = 200000;
             }
             else if (realty2562 < 200000)
             {
-                a = 0;
+                a = realty2562;
             }
             outcome2562 = a;
             textBox4.Text = outcome2562.ToString();

@@ -116,7 +116,7 @@ namespace taxx
             int pub = int.Parse(textBox15.Text);
             int outcome2;
             {
-                outcome2 = ((education + sport + hospital + pub) * 2);
+                outcome2 = ((education * 2) + (sport * 2) + (hospital * 2) + (pub * 2));
                 textBox21.Text = outcome2.ToString();
             }
         }
